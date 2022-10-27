@@ -3,16 +3,20 @@
 html {
   font-size: 100%;
 }
+
 body {
   color: #2b2a27;
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
 }
+
 img {
   max-width: 100%;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   color: #2b2a27;
 }
@@ -101,4 +105,25 @@ a {
 
 #footer .sns li {
   margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  /*-------------------------------------------
+  Recipe
+  -------------------------------------------*/
+  .flex {
+    flex-direction: column;  /* 積み重なるように配置する */
+  }
+  .flex .image {
+    width: 100%;
+  }
+  /*
+  画像の高さを固定していたのを解除する
+  */
+  .flex .image img {
+    height: auto;
+  }
+  .flex .recipe {
+    width: 100%;
+  }
 }
